@@ -1,0 +1,33 @@
+{
+  "name": "ommi-phone",
+  "version": "1.0.0",
+  "description": "Ommi Phone Service",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist/* && node node_modules/typescript/bin/tsc",
+    "build:dev": "rimraf dist/* && node node_modules/typescript/bin/tsc && ncp package.json dist/package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/singnaja/ommi-phone.git"
+  },
+  "keywords": [
+    "Ommi Phone Service"
+  ],
+  "author": "ommidev",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^14.14.45",
+    "ncp": "2.0.0",
+    "rimraf": "3.0.2",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "@nestjs/common": "^7.6.15",
+    "@nestjs/core": "^7.5.15",
+    "axios": "^0.26.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.4"
+  }
+}
