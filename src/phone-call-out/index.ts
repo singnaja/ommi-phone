@@ -1,1 +1,1 @@
-export { getHello } from './phone.service'
+export { initialize ,shutdown} from './phone.service'
