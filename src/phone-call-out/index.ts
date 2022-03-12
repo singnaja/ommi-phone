@@ -1,1 +1,1 @@
-export { initialize ,shutdown} from './phone.service'
+export { initialize ,shutdown ,connect ,muteMicrophone ,transfer ,disconnect ,answer ,hold ,nnhold} from './phone.service'
