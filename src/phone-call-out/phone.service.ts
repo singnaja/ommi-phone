@@ -45,3 +45,8 @@ export async function nnhold(): Promise<any> {
     let res = await axios.get(`http://localhost:8732/Phoneremote/nnhold`);
     return res;
 }
+
+export async function cdrData(): Promise<any> {
+    let res = await axios.get(`http://localhost:8732/Phoneremote/cdrdata`);
+    return res;
+}
