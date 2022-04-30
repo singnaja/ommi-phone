@@ -16,8 +16,8 @@ export async function connect(number : string,callid : string,callerid : string,
     return res;
 }
 
-export async function muteMicrophone(): Promise<any> {
-    let res = await axios.get('http://localhost:8732/Phoneremote/muteMicrophone?value=true');
+export async function muteMicrophone(value : string): Promise<any> {
+    let res = await axios.get(`http://localhost:8732/Phoneremote/muteMicrophone?value=${value}`);
     return res;
 }
 
