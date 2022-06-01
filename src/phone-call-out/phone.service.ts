@@ -42,7 +42,7 @@ export async function hold(): Promise<any> {
 }
 
 export async function nnhold(): Promise<any> {
-    let res = await axios.get(`http://localhost:8732/Phoneremote/nnhold`);
+    let res = await axios.get(`http://localhost:8732/Phoneremote/unhold`);
     return res;
 }
 
